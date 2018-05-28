@@ -9,6 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var firstNumber : Double = 0
+    var operatorSign : String = ""
+    var secondNumber : Double = 0
 
     @IBOutlet weak var calculation: UILabel!
     
@@ -23,10 +27,6 @@ class ViewController: UIViewController {
     }
 
     @IBAction func numericButton(_ sender: UIButton) {
-        var firstNumber : Double = 0
-        var  operatorSign : String = ""
-        var secondNumber : Double = 0
-        
         
         if sender.tag == 18 {
             calculation.text = "-"
